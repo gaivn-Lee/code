@@ -1,0 +1,69 @@
+﻿修改用户名、邮箱
+git config --global user.name "xxx"
+git config --global user.email "xxx"
+
+git config user.name		查看用户名
+git config email		查看邮箱
+
+git remote add origin https://github.com/gaivn-Lee/gitTest.git
+git branch -M main
+git push -u origin main
+
+git init	初始化仓库
+git status	查看工作区状态
+git add	添加到暂存区
+git commit -m ‘v1.0’	提交到本地仓库
+git log	查看版本
+git reset --hard HEAD^	回退版本，^表示回退到上一版本
+git reset --hard 56dfsdd	回退到指定版本
+git reflog	查看最近操作版本
+git checkout撤销修改
+git resets HEAD n.txt  	从暂存区撤销修改
+git diff	对比
+git rm n.txt 		删除
+
+git checkout 分支名		切换分支
+git checkout -b dev		新建dev分支并切换到dev分支
+git branch -d dev		删除dev分支
+git merge dev		合并分支
+
+touch .gitignore 		忽略规则
+
+target          //忽略这个target目录
+angular.json    //忽略这个angular.json文件
+log/*           //忽略log下的所有文件
+css/*.css       //忽略css目录下的.css文件
+
+-------------------------------------------------------------------
+
+拉取远程仓到本地
+
+git clone ××
+
+cd ×××
+
+查看分支
+
+git branch -a
+
+切换到想要操作的分支
+
+git checkout 想要操作的分支
+
+在本地仓库删除文件
+
+git rm 我的文件
+
+在本地仓库删除文件夹
+
+git rm -r 我的文件夹/
+此处-r表示递归所有子目录，如果你要删除的，是空的文件夹，此处可以不用带上-r。
+
+提交代码
+
+git commit -m”我的修改”
+
+推送到远程仓库（比如GitHub）
+
+git push origin 想要操作的分支
+
